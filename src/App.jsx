@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './components/Header.jsx'
+import Sidebar from './components/Sidebar.jsx'
+import './style/app.sass'
 
 const App = () => {
   return ( 
-    <div>
-      <h1>This is App</h1>
-      <Header></Header>
+    <div className="main-container">
+      <Sidebar></Sidebar>
     </div>
    );
 }

@@ -18,9 +18,16 @@ module.exports = {
         rules: [
             {
                 // це для імпорту зображень з src to dist
-                test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                test: /\.(png|jpg|jpeg|gif)$/i,
                 type: 'asset/resource'
-            }
+            },
+            {
+                test: /\.svg$/i,
+                // issuer: /\.[jt]sx?$/,
+                use: ['@svgr/webpack'],
+                // type: 'asset/resource'
+            },
+            
         ]
     }
 }

@@ -18,18 +18,6 @@ module.exports = merge(common, {
     ],
     module: {
         rules: [
-            // {
-            // test: /\.m?js$/,
-            // exclude: /node_modules/,
-            // use: {
-            //     loader: 'babel-loader',
-            //     options: {
-            //     presets: [
-            //         ['@babel/preset-env', { targets: "defaults" }]
-            //     ]
-            //     }
-            //   }
-            // },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,

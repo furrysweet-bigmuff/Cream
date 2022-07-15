@@ -20,7 +20,7 @@ module.exports = merge(common, {
                 use: ["babel-loader"],
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(s[ac]ss|css)$/i,
                 use: [
                     // Creates `style` nodes from JS strings
                     "style-loader",
@@ -29,10 +29,11 @@ module.exports = merge(common, {
                     // Compiles Sass to CSS
                     "sass-loader",
                 ]
-            }
+            },
+            
         ]
     },
-    resolve: {
-        extensions: ["*", ".js", ".jsx"],
-      }
+    // resolve: {
+        // extensions: ["*", ".js", ".jsx"],
+    //   }
 });
