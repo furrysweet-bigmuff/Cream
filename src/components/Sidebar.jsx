@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../images/logo.svg'
 import SidebarMenu from './SidebarMenu.jsx'
+import SidebarProfileContainer from './SidebarProfileContainer.jsx'
 import '../style/sidebar.sass'
 
 const Sidebar = () => {
@@ -10,6 +11,7 @@ const Sidebar = () => {
         <Logo/>
       </div>
       <SidebarMenu></SidebarMenu>
+      <SidebarProfileContainer></SidebarProfileContainer>
     </div> 
   );
 }
