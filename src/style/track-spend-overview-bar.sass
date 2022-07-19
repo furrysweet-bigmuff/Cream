@@ -1,5 +1,26 @@
 .track-spend-overview-bar
   .column
-    width: 29%
     &.day-selector
-      width: 13%
+      flex: 0 0 176px
+      padding: 0 40px 0 0
+      text-align: center
+      & > div:first-child
+        margin-bottom: 10px
+      .buttons
+        display: flex
+        justify-content: center
+        gap: 15px
+        svg
+          width: 35px
+          height: 35px
+          cursor: pointer
+          &:hover
+            path
+              fill: #000
+          path
+            transition: fill 0.5s
+  .msg
+    font-family: 'Raleway', sans-serif
+    font-weight: 700
+    &.success
+      color: #308463

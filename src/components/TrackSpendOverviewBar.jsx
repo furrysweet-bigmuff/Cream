@@ -31,7 +31,7 @@ const TrackSpendOverviewBar = () => {
         <OverviewBarColumn>
           <OverviewBarRow label={'Saved:'} content={'545₴'}></OverviewBarRow>  
           <div>
-            <div className="msg">Keep going, you’re doin’ good!</div>
+            <div className="msg success">Keep going, you’re doin’ good!</div>
           </div>
         </OverviewBarColumn>
       </OverviewBar>
